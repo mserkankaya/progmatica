@@ -17,10 +17,10 @@
                     </li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container-fluid">
-                            @if(!empty($sliders))
-                                @foreach($sliders as $item)
+                    @if(!empty($sliders))
+                        @foreach($sliders as $index => $item)
+                            <div class="carousel-item @if($index == 0) active @endif">
+                                <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-6 px-0">
                                             <div class="img-box">
@@ -41,12 +41,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach
-                            @else
-                                <h1>Slider Bulunamadı</h1>
-                            @endif
-                        </div>
-                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    @else
+                        <h1>Slider Bulunamadı</h1>
+                    @endif
                 </div>
                 <div class="carousel_btn-box">
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -80,35 +80,30 @@
             @if($services)
                 <div class="row">
                     @foreach($services as $item)
-                        <div class="col-lg-6">
-                            <div class="img-container tab-content">
-                                <div class="img-box tab-pane fade show active" id="img{{$loop->index + 1}}" role="tabpanel">
-                                    <img src="{{ asset('images/'.$item->imageUrl) }}" alt="">
+                        <div class="col-lg-4 mb-4 d-flex flex-column align-items-center">
+                            <div class="img-container">
+                                <div class="img-box">
+                                    <img src="{{$item->imageUrl}}" alt="" class="img-fluid" style="width: 250px;">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="detail-container nav nav-tabs" id="myTab" role="tablist">
-                                <div class="detail-box active" id="img{{$loop->index + 1}}-tab" data-toggle="tab" href="#img{{$loop->index + 1}}" role="tab" aria-selected="true">
+                            <div class="detail-container text-center mt-3">
+                                <div class="detail-box">
                                     <h4>
                                         {{$item->title}}
                                     </h4>
                                 </div>
                             </div>
                         </div>
-                        @if(($loop->index + 1) % 2 == 0)
-                </div><div class="row">
-                    @endif
                     @endforeach
+                    @else
+                        <h1>Hizmet Bulunamadı</h1>
+                    @endif
                 </div>
-            @else
-                <h1>Hizmet Bulunamadı</h1>
-            @endif
-            <div class="btn-box">
-                <a href="">
-                    Read More
-                </a>
-            </div>
+                <div class="btn-box text-center mt-4">
+                    <a href="">
+                        Daha Fazla
+                    </a>
+                </div>
         </div>
     </section>
 
