@@ -25,7 +25,7 @@ Route::get('/iletisim', [ContactController::class, 'index'])->name('contact.inde
 Route::post('/iletisim', [ContactController::class, 'store'])->name('contact.store');
 
 Route::prefix('admin')->name('admin.')->group(function () {
-    Route::get('/admin', [AdminController::class, 'index'])->name('index'); // Admin ana sayfa yönlendirme
+    Route::get('/', [AdminController::class, 'index'])->name('index');
     Route::resource('hakkimizda', AboutController::class);
     Route::resource('yorumlar', ClientController::class);
     Route::resource('iletisim', ContactController::class);

@@ -20,6 +20,7 @@ class CreateContactsTable extends Migration
             $table->string('phone');
             $table->text('message');
             $table->text('mapUrl')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
