@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 //    return view('home.index');
 //});
 
-Route::get("/giris", [AuthController::class, 'showSignInForm']);
-Route::post("/giris", [AuthController::class, 'signIn']);
-
-Route::get("/uye-ol", [AuthController::class, 'showSignUpForm']);
-Route::post("/uye-ol", [AuthController::class, 'signUp']);
-
-Route::get("/cikis", [AuthController::class, 'logout']);
+//Route::get("/giris", [AuthController::class, 'showSignInForm']);
+//Route::post("/giris", [AuthController::class, 'signIn']);
+//
+//Route::get("/uye-ol", [AuthController::class, 'showSignUpForm']);
+//Route::post("/uye-ol", [AuthController::class, 'signUp']);
+//
+//Route::get("/cikis", [AuthController::class, 'logout']);
 
 Route::get('/anasayfa', [HomeController::class, 'index']);
 
