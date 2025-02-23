@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modernize Free</title>
+    <title>Progmatica Admin</title>
     <link rel="shortcut icon" type="image/png" href="{{asset('admin/assets/images/logos/favicon.png')}}" />
     <link rel="stylesheet" href="{{asset('admin/assets/css/styles.min.css')}}" />
 </head>
@@ -30,112 +30,115 @@
                 <ul id="sidebarnav">
                     <li class="nav-small-cap">
                         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                        <span class="hide-menu">Home</span>
+                        <span class="hide-menu">Arayüz</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="/admin/index" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                            <span class="hide-menu">Anasayfa</span>
+                        </a>
+                    </li>
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Hakkımızda</span>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                            <span class="hide-menu">Dashboard</span>
+                            <span class="hide-menu">Hakkımızda Listesi</span>
                         </a>
                     </li>
                     <li class="nav-small-cap">
                         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                        <span class="hide-menu">UI COMPONENTS</span>
+                        <span class="hide-menu">Müşteriler</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-article"></i>
+                  <i class="ti ti-layout-dashboard"></i>
                 </span>
-                            <span class="hide-menu">Buttons</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-alert-circle"></i>
-                </span>
-                            <span class="hide-menu">Alerts</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-                </span>
-                            <span class="hide-menu">Card</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-file-description"></i>
-                </span>
-                            <span class="hide-menu">Forms</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./ui-typography.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-typography"></i>
-                </span>
-                            <span class="hide-menu">Typography</span>
+                            <span class="hide-menu">Müşteri Yorumları</span>
                         </a>
                     </li>
                     <li class="nav-small-cap">
                         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                        <span class="hide-menu">AUTH</span>
+                        <span class="hide-menu">İletişim</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-login"></i>
+                  <i class="ti ti-layout-dashboard"></i>
                 </span>
-                            <span class="hide-menu">Login</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
-                <span>
-                  <i class="ti ti-user-plus"></i>
-                </span>
-                            <span class="hide-menu">Register</span>
+                            <span class="hide-menu">Gelen Mesajlar</span>
                         </a>
                     </li>
                     <li class="nav-small-cap">
                         <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                        <span class="hide-menu">EXTRA</span>
+                        <span class="hide-menu">Çalışmalarımız</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="./icon-tabler.html" aria-expanded="false">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-mood-happy"></i>
+                  <i class="ti ti-layout-dashboard"></i>
                 </span>
-                            <span class="hide-menu">Icons</span>
+                            <span class="hide-menu">Çalışmalar Listesi</span>
                         </a>
                     </li>
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Müşteriler</span>
+                    </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
                 <span>
-                  <i class="ti ti-aperture"></i>
+                  <i class="ti ti-layout-dashboard"></i>
                 </span>
-                            <span class="hide-menu">Sample Page</span>
+                            <span class="hide-menu">Müşteri Yorumları Listesi</span>
+                        </a>
+                    </li>
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Hizmetler</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                            <span class="hide-menu">Hizmetlerimiz</span>
+                        </a>
+                    </li>
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Slider</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                            <span class="hide-menu">Slider Listesi</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Kullanıcılar</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                            <span class="hide-menu">Kullanıcı Listesi</span>
                         </a>
                     </li>
                 </ul>
-                <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
-                    <div class="d-flex">
-                        <div class="unlimited-access-title me-3">
-                            <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
-                            <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank" class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
-                        </div>
-                        <div class="unlimited-access-img">
-                            <img src="{{asset('admin/assets/images/backgrounds/rocket.png')}}" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
+
             </nav>
             <!-- End Sidebar navigation -->
         </div>

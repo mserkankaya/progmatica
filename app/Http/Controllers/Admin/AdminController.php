@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Portfolio;
-use App\Models\Service;
 use Illuminate\Http\Request;
 
-class PortfolioController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = Portfolio::where('status', 1)->get();
-        return view('portfolio.index', compact('portfolios'));
+        return view('admin.index');
     }
 
     /**

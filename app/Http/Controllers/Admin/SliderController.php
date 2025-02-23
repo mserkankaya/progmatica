@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\About;
-use App\Models\Service;
 use Illuminate\Http\Request;
 
-class ServiceController extends Controller
+class SliderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $services = Service::where('status', 1)->get();
-        return view('service.index', compact('services'));
+        //
     }
 
     /**

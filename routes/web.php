@@ -1,13 +1,13 @@
 <?php
 
-use App\Http\Controllers\admin\AboutController;
-use App\Http\Controllers\admin\AdminController;
-use App\Http\Controllers\admin\ClientController;
-use App\Http\Controllers\admin\ContactController;
-use App\Http\Controllers\admin\PortfolioController;
-use App\Http\Controllers\admin\ServiceController;
-use App\Http\Controllers\admin\SliderController;
-use App\Http\Controllers\ui\HomeController;
+use App\Http\Controllers\Admin\AboutController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\PortfolioController;
+use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Ui\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -15,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/anasayfa', function () {
 //    return view('home.index');
 //});
+
+Route::get("/giris", [AuthController::class, 'showSignInForm']);
+Route::post("/giris", [AuthController::class, 'signIn']);
+
+Route::get("/uye-ol", [AuthController::class, 'showSignUpForm']);
+Route::post("/uye-ol", [AuthController::class, 'signUp']);
+
+Route::get("/cikis", [AuthController::class, 'logout']);
 
 Route::get('/anasayfa', [HomeController::class, 'index']);
 
@@ -24,7 +32,7 @@ Route::get('/calismalarimiz', [PortfolioController::class, 'index'])->name('port
 Route::get('/iletisim', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/iletisim', [ContactController::class, 'store'])->name('contact.store');
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('yonetim')->name('yonetim.')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
     Route::resource('hakkimizda', AboutController::class);
     Route::resource('yorumlar', ClientController::class);
