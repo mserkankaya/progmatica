@@ -17,6 +17,7 @@ class ClientSeeder extends Seeder
         Client::create([
             'namesurname'=>"Serkan",
             'comment'=>"Aldığım hizmetten çok memnun kaldım",
+            'status'=>1,
         ]);
     }
 }
