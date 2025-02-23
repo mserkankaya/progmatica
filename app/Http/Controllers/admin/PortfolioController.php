@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Portfolio;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -14,7 +16,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolios = Portfolio::where('status', 1)->get();
+        return view('portfolio.index', compact('portfolios'));
     }
 
     /**

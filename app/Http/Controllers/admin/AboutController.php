@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -14,7 +15,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        //
+       $abouts = About::where('status', 1)->get();
+       return view('about.index', compact('abouts'));
     }
 
     /**

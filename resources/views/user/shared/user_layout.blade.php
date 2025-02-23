@@ -48,20 +48,20 @@
                     <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                         <ul class="navbar-nav  ">
                             <li class="nav-item ">
-                                <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="/anasayfa">Anasayfa <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">
+                                <a class="nav-link" href="/hakkimizda">
                                     Hakkımızda
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="service.html">
+                                <a class="nav-link" href="/hizmetlerimiz">
                                     Hizmetlerimiz
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">
+                                <a class="nav-link" href="/calismalarimiz">
                                     Çalışmalarımız
                                 </a>
                             </li>
@@ -103,27 +103,27 @@
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <h6>
-                        ABOUT US
+                        HAKKIMIZDA
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                        Biz, sektördeki tecrübemiz ve müşteri odaklı yaklaşımımızla, her türlü projede en iyi çözümleri sunmayı hedefleyen bir ekibiz. Yenilikçi fikirlerimiz ve profesyonel hizmet anlayışımız ile müşterilerimize değer katmak için sürekli olarak gelişiyoruz.
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <h6>
-                        Instagram
+                        INSTAGRAM
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipi
-                        scing elit, sed doLorem ipsum dolor sit
+                        Instagram hesabımız üzerinden son projelerimiz, etkinliklerimiz ve güncellemelerimizle ilgili içerikler paylaşıyoruz. Bizi takip ederek yeniliklerden haberdar olabilir, çalışmalarımıza göz atabilirsiniz.
+
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <h6>
-                        NEED HELP
+                        YARDIMA MI İHTİYACINIZ VAR?
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                        Herhangi bir konuda desteğe ihtiyacınız varsa, bizimle iletişime geçebilirsiniz. Sorularınızı yanıtlamak ve çözüm sunmak için buradayız. Yardımcı olabileceğimiz bir şey varsa, lütfen bize bildirin.
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -133,15 +133,15 @@
                     <div class="info_link-box">
                         <a href="">
                             <img src="{{asset('user/images/location.png')}}" alt="">
-                            <span> Gb road 123 london Uk </span>
+                            <span> Şanlıurfa Haliliye </span>
                         </a>
                         <a href="">
                             <img src="{{asset('user/images/call.png')}}" alt="">
-                            <span>+01 12345678901</span>
+                            <span>+90 5316354963</span>
                         </a>
                         <a href="">
                             <img src="{{asset('user/images/mail.png')}}" alt="">
-                            <span> demo@gmail.com</span>
+                            <span> mskdeveloper@hotmail.com</span>
                         </a>
                     </div>
                 </div>
@@ -152,8 +152,8 @@
     <section class=" footer_section">
         <div class="container">
             <p>
-                &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Free Html Templates</a>
+                &copy; <span id="displayYear"></span> Tüm Hakları Saklıdır Geliştirici
+                <a href="#">Serkan KAYA</a>
             </p>
         </div>
     </section>
