@@ -18,7 +18,7 @@ class CreateAboutsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('imageUrl')->nullable();
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

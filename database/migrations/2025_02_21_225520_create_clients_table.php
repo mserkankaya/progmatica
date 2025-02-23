@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->string('namesurname');
             $table->string('imageUrl')->nullable();
             $table->text('comment');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

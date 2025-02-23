@@ -11,6 +11,7 @@
                             <div>
                                 <h5 class="card-title fw-semibold">Slider Listesi</h5>
                             </div>
+                            <a href="{{ route('yonetim.slider.create') }}" class="btn btn-primary">Yeni Ekle</a>
                         </div>
 
 
@@ -34,8 +35,8 @@
                                     <td>{{ $slider->imageUrl }}</td>
                                     <td>{{ $slider->status == 1 ? 'Aktif' : 'Pasif' }}</td>
                                     <td>
-                                        <a href="{{ route('yonetim.hakkimizda.edit', $slider->id) }}" class="btn btn-warning btn-sm">Düzenle</a>
-                                        <form action="{{ route('yonetim.hakkimizda.destroy', $slider->id) }}" method="POST" style="display:inline;">
+                                        <a href="{{ route('yonetim.slider.edit', $slider->id) }}" class="btn btn-warning btn-sm">Düzenle</a>
+                                        <form action="{{ route('yonetim.slider.destroy', $slider->id) }}" method="POST" style="display:inline;">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger btn-sm">Sil</button>

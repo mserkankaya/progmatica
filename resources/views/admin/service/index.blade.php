@@ -9,8 +9,9 @@
                     <div class="card-body">
                         <div class="d-sm-flex d-block align-items-center justify-content-between mb-3">
                             <div>
-                                <h5 class="card-title fw-semibold">Hakkımızda Listesi</h5>
+                                <h5 class="card-title fw-semibold">Hizmetler Listesi</h5>
                             </div>
+                            <a href="{{ route('yonetim.hizmetler.create') }}" class="btn btn-primary">Yeni Ekle</a>
                         </div>
 
 
@@ -19,8 +20,6 @@
                             <tr>
                                 <th>#</th>
                                 <th>Başlık</th>
-                                <th>Açıklama</th>
-                                <th>Resim Link</th>
                                 <th>Durum</th>
                                 <th>İşlemler</th>
                             </tr>
@@ -30,8 +29,6 @@
                                 <tr>
                                     <td>{{ $service->id }}</td>
                                     <td>{{ $service->title }}</td>
-                                    <td>{{ $service->description }}</td>
-                                    <td>{{ $service->imageUrl }}</td>
                                     <td>{{ $service->status == 1 ? 'Aktif' : 'Pasif' }}</td>
                                     <td>
                                         <a href="{{ route('yonetim.hizmetler.edit', $service->id) }}" class="btn btn-warning btn-sm">Düzenle</a>

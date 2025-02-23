@@ -9,8 +9,9 @@
                     <div class="card-body">
                         <div class="d-sm-flex d-block align-items-center justify-content-between mb-3">
                             <div>
-                                <h5 class="card-title fw-semibold">Hakkımızda Listesi</h5>
+                                <h5 class="card-title fw-semibold">Çalışmalar Listesi</h5>
                             </div>
+                            <a href="{{ route('yonetim.calismalar.create') }}" class="btn btn-primary">Yeni Ekle</a>
                         </div>
 
 

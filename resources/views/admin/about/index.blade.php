@@ -11,14 +11,16 @@
                             <div>
                                 <h5 class="card-title fw-semibold">Hakkımızda Listesi</h5>
                             </div>
+                            <!-- Yeni Ekle Butonu -->
+                            <a href="{{ route('yonetim.hakkimizda.create') }}" class="btn btn-primary">Yeni Ekle</a>
                         </div>
-
 
                         <table class="table table-bordered w-100 mt-3">
                             <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Başlık</th>
+                                <th>Açıklama</th>
                                 <th>Durum</th>
                                 <th>İşlemler</th>
                             </tr>
@@ -28,6 +30,7 @@
                                 <tr>
                                     <td>{{ $about->id }}</td>
                                     <td>{{ $about->title }}</td>
+                                    <td>{{ $about->description }}</td>
                                     <td>{{ $about->status == 1 ? 'Aktif' : 'Pasif' }}</td>
                                     <td>
                                         <a href="{{ route('yonetim.hakkimizda.edit', $about->id) }}" class="btn btn-warning btn-sm">Düzenle</a>

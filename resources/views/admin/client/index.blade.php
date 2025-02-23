@@ -11,6 +11,7 @@
                             <div>
                                 <h5 class="card-title fw-semibold">Müşteri Yorumları Listesi</h5>
                             </div>
+                            <a href="{{ route('yonetim.yorumlar.create') }}" class="btn btn-primary">Yeni Ekle</a>
                         </div>
 
 
