@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Ui;
 
 use App\Http\Controllers\Controller;
-use App\Models\About;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-       $abouts = About::where('status', 1)->get();
-       return view('about.index', compact('abouts'));
+        return view('contact.index');
     }
 
     /**
@@ -33,11 +32,28 @@ class AboutController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+        // Form verilerini doğrula
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:20',
+            'message' => 'required|string|max:1000',
+        ]);
+
+        // Veriyi kaydet
+        Contact::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'message' => $request->message,
+        ]);
+
+        // Kullanıcıya başarı mesajı göster
+        return redirect()->back()->with('success', 'Mesajınız başarıyla gönderildi.');
     }
 
     /**

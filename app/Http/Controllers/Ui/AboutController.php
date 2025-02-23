@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Ui;
 
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use Illuminate\Http\Request;
 
-class SliderController extends Controller
+class AboutController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,9 @@ class SliderController extends Controller
      */
     public function index()
     {
-        //
+       $abouts = About::where('status', 1)->get();
+       return view('about.index', compact('abouts'));
     }
-
     /**
      * Show the form for creating a new resource.
      *

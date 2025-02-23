@@ -1,28 +1,34 @@
 @extends('admin.shared.admin_layout')
 @section('content')
 
+    <div class="container mt-4">
 
-    <div class="row">
-        <div class="col-lg-8 d-flex align-items-strech">
-            <div class="card w-100">
-                <div class="card-body">
-                    <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
-                        <div class="mb-3 mb-sm-0">
-                            <h5 class="card-title fw-semibold">Sales Overview</h5>
-                        </div>
-                        <div>
-                            <select class="form-select">
-                                <option value="1">March 2023</option>
-                                <option value="2">April 2023</option>
-                                <option value="3">May 2023</option>
-                                <option value="4">June 2023</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div id="chart"></div>
-                </div>
-            </div>
-        </div>
+        <div class="welcome-text">Progmatica Admin Sayfasına Hoş Geldiniz</div>
     </div>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .welcome-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+            border-radius: 10px;
+            margin-top: 15px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </style>
+
 
 @endsection
